@@ -22,3 +22,10 @@ function Mission5(keysArray, valuesArray) {
 
   return result;
 }
+
+module.exports = {
+  Mission1,
+  Mission2,
+  Mission3,
+  Mission5,
+};
