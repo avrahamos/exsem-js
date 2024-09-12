@@ -1,0 +1,119 @@
+* {
+  background-color: #2c3e50;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #2ecc71;
+}
+
+button {
+  background-color: #2ecc71;
+  border: 2px solid #1f2a38;
+  padding: 7px 15px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+.form-home,
+#editSection {
+  background-color: #33485d;
+  padding: 15px;
+  border-radius: 5px;
+  width: 70%;
+  margin: 30px auto;
+  box-shadow: 0 2px 4px #222;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 90%;
+  padding: 7px;
+  margin: 8px 0;
+  border-radius: 3px;
+  border: 1px solid #555;
+  background-color: #405669;
+  color: #e0e0e0;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #a0a0a0;
+}
+
+button[type="submit"],
+#cancelEdit {
+  width: 50%;
+  margin: 5px 1%;
+  font-size: 14px;
+}
+
+#cancelEdit {
+  background-color: #ff1900;
+}
+
+#cancelEdit:hover {
+  background-color: #740c00;
+}
+
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #33485d;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #465a71;
+}
+
+th {
+  background-color: #1f2a38;
+  color: #00ff99;
+  font-weight: normal;
+}
+
+td {
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.actions {
+  display: block;
+  margin: 0 auto;
+}
+
+.actions button {
+  display: block;
+  margin: 3px 0;
+  width: 90px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+tr:hover {
+  background-color: #3c5066;
+}
+
+#actions {
+  display: block;
+  text-align: center;
+}
+
+#editSection {
+  display: none;
+}

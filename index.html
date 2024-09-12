@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="form-home">
+      <h1>BATTALION FORCE MANAGEMENT</h1>
+      <form id="addSoldierForm">
+        <div>
+          <input type="text" id="fullName" placeholder="Full name" required />
+        </div>
+        <div>
+          <input type="text" id="rank" placeholder="rank" required />
+        </div>
+        <div>
+          <input type="text" id="role" placeholder="position" required />
+        </div>
+        <div>
+          <input type="text" id="platoon" placeholder="platoon" required />
+        </div>
+        <div>
+          <input
+            type="number"
+            id="missionTime"
+            placeholder=" mission time (minutes)"
+          />
+        </div>
+        <div>
+          <select id="status" required>
+            <option value="Active">active</option>
+            <option value="Reserve">reserves</option>
+            <option value="Retired">in retirement</option>
+          </select>
+        </div>
+        <button type="submit">Add a soldier</button>
+      </form>
+    </div>
+
+    <table id="soldiersTable">
+      <thead>
+        <tr>
+          <th><button id="sortButton">Full name ⬆️</button></th>
+          <th>rank</th>
+          <th>role</th>
+          <th>platoon</th>
+          <th>status</th>
+          <th>time mission</th>
+          <th>actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="editSection">
+      <h2>Editing a soldier</h2>
+      <form id="editSoldierForm">
+        <input type="hidden" id="editSoldierIndex" />
+        <input type="text" id="editFullName" placeholder="Full name" />
+        <input type="text" id="editRank" placeholder="rank" />
+        <input type="text" id="editRole" placeholder="role" />
+        <input type="text" id="editPlatoon" placeholder="platoon" />
+        <select id="editStatus">
+          <option value="Active">active</option>
+          <option value="Reserve">reserve</option>
+          <option value="Retired">Retired</option>
+        </select>
+        <input
+          type="number"
+          id="editMissionTime"
+          placeholder="mission time (minutes)"
+        />
+        <button type="submit">Editing a soldier</button>
+        <button type="button" id="cancelEdit">cancel</button>
+      </form>
+    </div>
+  </body>
+</html>
